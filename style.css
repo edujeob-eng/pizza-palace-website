@@ -1,0 +1,134 @@
+/* Base styles */
+body {
+    background: linear-gradient(135deg,#ff7844,#ffd370,#d83b3b);
+    line-height: 1.6;
+    color: #222;
+}
+h1 {
+    color: #cc5e62 15px;
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+.highlight {
+    color: #d9666a;
+}
+#home {
+    color: #222;
+}
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:16px;;
+    font-weight: normal;
+}
+h2,h3{
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+p{
+    color:rgb(19, 19, 19);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    line-height: 1.6;
+    color: #222;
+    background-color: #e16a4c;
+}
+.logo {
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px;
+}
+/*Flexbox used for navigation-required feature*/
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b82025;
+    color: rgb(222, 22, 22);
+    padding: 1rem;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+.nav-links a {
+    color: rgb(236, 236, 155);
+    text-decoration:none;
+}
+/* CSS Grid-used on Services/Menu page-required feature*/
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(260px, 1fr));
+    gap: 1.8rem;
+    margin: 2rem 0;
+}
+.menucard {
+    background: #f3de81;
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6pxrgba(0,0,0,0.12);
+}
+/*form styling (Contact page) */
+.contact-form {
+    max-width: 620px;
+    margin: 2rem auto;
+    justify-content: center;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+    justify-content: center;
+}
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    vertical-align: top;
+    justify-content: center;
+}
+button {
+    background: #b82025;
+    color: white;
+    padding: 0.9rem 1.6rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.error-text {
+    color: #c00;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+/* Rsponsive Media Queries - assignment requirement */
+@media (max-width:768px) {
+    .main-nav{
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width:480px) {
+    h1 { font-size: 1.7rem;}
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
